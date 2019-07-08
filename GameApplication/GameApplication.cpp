@@ -1,5 +1,6 @@
 #include "GameApplication.h"
 #include "GameCore.h"
+#include "Urho3D/Engine/EngineDefs.h"
 
 AwesomeGameApplication::AwesomeGameApplication(Context* context)
     : Application(context)

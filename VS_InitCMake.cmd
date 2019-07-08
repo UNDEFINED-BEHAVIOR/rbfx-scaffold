@@ -1,0 +1,8 @@
+@ECHO off
+CALL %~dp0VS_InitEnv
+ECHO %~dp0VS_InitEnv
+MKDIR %VS_BUILD_DIR%
+PUSHD %VS_BUILD_DIR%
+cmake .. %*
+POPD
+@PAUSE
