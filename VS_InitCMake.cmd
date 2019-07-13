@@ -3,6 +3,8 @@ CALL %~dp0VS_InitEnv
 ECHO %~dp0VS_InitEnv
 MKDIR %VS_BUILD_DIR%
 PUSHD %VS_BUILD_DIR%
-cmake .. %*
+cmake .. ^
+-DHIDAPI=0 %*
+
 POPD
 @PAUSE
